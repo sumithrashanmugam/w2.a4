@@ -13,9 +13,8 @@ public static void main(String[] args) {
 		System.out.println("the source" + "is"+driver.getPageSource());
 		String cssValue = driver.findElement(By.id("color")).getCssValue("background-color");
 		System.out.println("The Background color in rgba is "+cssValue);
-		String text = driver.findElement(By.id("size")).getText();
-		System.out.println("The text is "+text);
-		int location=driver.findElement(By.id("color")).getLocation().getX();
+		System.out.println( driver.findElement(By.id("size")).getText());
+        int location=driver.findElement(By.id("color")).getLocation().getX();
         System.out.println("The location of X is "+location);
         org.openqa.selenium.Dimension size = driver.findElement(By.id("size")).getSize();
     	System.out.println("The size is :"+size);
